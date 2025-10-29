@@ -15,6 +15,18 @@ import { errorHandler } from "./middleware/errorHandler.js";
 dotenv.config();
 connectDB();
 
+// Validate required environment variables
+if (!process.env.JWT_SECRET) {
+  if (process.env.NODE_ENV === 'production') {
+    console.error('FATAL: JWT_SECRET environment variable is not set. The server cannot start without it.');
+    process.exit(1);
+  } else {
+    // Provide a development fallback to avoid crashing during local dev/testing
+    process.env.JWT_SECRET = 'dev-secret-change-this';
+    console.warn('WARNING: JWT_SECRET is not set. Using development fallback secret. Do NOT use this in production.');
+  }
+}
+
 const app = express();
 app.use(cors());
 app.use(express.json());
