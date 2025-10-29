@@ -20,7 +20,7 @@ import DietPlanView from '../pages/user/DietPlanView';
 import DietPlansList from '../pages/user/DietPlansList';
 
 // Restaurant Pages
-import RestaurantDashboard from '../pages/restaurant/Dashboard';
+import RestaurantDashboard from '../pages/restaurant/DashBoard';
 import FoodManagement from '../pages/restaurant/FoodManagement';
 import RestaurantOrders from '../pages/restaurant/Orders';
 import RestaurantSettings from '../pages/restaurant/Settings';
