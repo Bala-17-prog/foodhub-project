@@ -33,7 +33,7 @@ const Orders = () => {
       
       // Detailed error handling
       if (error.message === 'Network Error') {
-        const errorMsg = '❌ Cannot connect to server. Is backend running on http://localhost:5000?';
+        const errorMsg = '❌ Cannot connect to server. Is backend running on https://foodhub-backend-fghd.onrender.com?';
         setError(errorMsg);
         toast.error(errorMsg);
       } else if (error.response?.status === 401) {

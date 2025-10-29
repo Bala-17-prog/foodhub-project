@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// Allow runtime override via window.__API_URL__ (useful for changing backend URL without rebuilding)
+// Priority: window.__API_URL__ -> Vite build-time VITE_API_URL -> default production backend
+const API_URL = (typeof window !== 'undefined' && window.__API_URL__) || import.meta.env.VITE_API_URL || 'https://foodhub-backend-fghd.onrender.com/api';
 
 // Create axios instance
 const api = axios.create({

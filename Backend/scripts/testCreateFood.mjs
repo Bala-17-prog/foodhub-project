@@ -4,8 +4,7 @@ import http from 'http';
 const loginData = JSON.stringify({ email: 'restaurant@test.com', password: 'password123' });
 
 const loginOptions = {
-  hostname: 'localhost',
-  port: 5000,
+  hostname: 'foodhub-backend-fghd.onrender.com',
   path: '/api/auth/login',
   method: 'POST',
   headers: {
@@ -33,8 +32,7 @@ const loginReq = http.request(loginOptions, (res) => {
     });
 
     const foodOptions = {
-      hostname: 'localhost',
-      port: 5000,
+      hostname: 'foodhub-backend-fghd.onrender.com',
       path: '/api/foods',
       method: 'POST',
       headers: {
