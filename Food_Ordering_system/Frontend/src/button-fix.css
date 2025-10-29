@@ -1,0 +1,138 @@
+/* ============================================
+   BUTTON VISIBILITY FIX - FORCE COLORS
+   ============================================ */
+
+/* Primary Buttons - Orange */
+button.bg-orange-600,
+button[class*="bg-orange"],
+.bg-orange-600 {
+  background-color: #ea580c !important;
+  color: white !important;
+  border: none !important;
+}
+
+button.bg-orange-600:hover,
+button[class*="bg-orange"]:hover {
+  background-color: #c2410c !important;
+}
+
+/* Primary using Tailwind primary */
+button.bg-primary-600,
+button[class*="bg-primary"] {
+  background-color: #ea580c !important;
+  color: white !important;
+}
+
+/* Red/Danger Buttons */
+button.bg-red-600,
+button[class*="bg-red"] {
+  background-color: #dc2626 !important;
+  color: white !important;
+}
+
+button.bg-red-600:hover,
+button[class*="bg-red"]:hover {
+  background-color: #b91c1c !important;
+}
+
+/* Green/Success Buttons */
+button.bg-green-600,
+button[class*="bg-green"] {
+  background-color: #16a34a !important;
+  color: white !important;
+}
+
+button.bg-green-600:hover,
+button[class*="bg-green"]:hover {
+  background-color: #15803d !important;
+}
+
+/* Blue Buttons */
+button.bg-blue-600,
+button[class*="bg-blue"] {
+  background-color: #2563eb !important;
+  color: white !important;
+}
+
+button.bg-blue-600:hover,
+button[class*="bg-blue"]:hover {
+  background-color: #1d4ed8 !important;
+}
+
+/* Gray/Secondary Buttons */
+button.bg-gray-600,
+button[class*="bg-gray"] {
+  background-color: #4b5563 !important;
+  color: white !important;
+}
+
+button.bg-gray-600:hover,
+button[class*="bg-gray"]:hover {
+  background-color: #374151 !important;
+}
+
+/* Default button styling if no class */
+button:not([class*="bg-"]):not([class*="border"]) {
+  background-color: #ea580c !important;
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+}
+
+/* All buttons get pointer cursor and shadow */
+button {
+  cursor: pointer !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+/* Link-style buttons that should remain transparent */
+button.text-orange-600,
+button.text-blue-600,
+button.text-gray-600,
+button[class*="text-"]:not([class*="bg-"]) {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Ensure outline buttons have proper styling */
+button[class*="border-orange"],
+button[class*="border-primary"] {
+  background-color: white !important;
+  color: #ea580c !important;
+  border: 2px solid #ea580c !important;
+}
+
+button[class*="border-orange"]:hover,
+button[class*="border-primary"]:hover {
+  background-color: #fff7ed !important;
+}
+
+/* SPECIFIC FIX: Ensure all interactive buttons are visible */
+.btn,
+[type="button"],
+[type="submit"],
+button[type="button"],
+button[type="submit"] {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}

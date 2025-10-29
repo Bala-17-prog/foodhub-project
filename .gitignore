@@ -1,0 +1,6 @@
+# Ignore .env files in all folders
+Backend/.env
+Frontend/.env
+
+# Ignore all node_modules folders
+node_modules/
