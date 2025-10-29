@@ -97,13 +97,13 @@ const DietPlanView = () => {
             </Card>
 
             <Card className="p-4 text-center">
-              <FaRulerVertical className="text-3xl text-blue-600 mx-auto mb-2" />
+              <FaRulerVertical className="text-3xl text-primary-600 mx-auto mb-2" />
               <div className="text-2xl font-bold text-gray-900">{dietPlan.height} cm</div>
               <div className="text-sm text-gray-600">Height</div>
             </Card>
 
             <Card className="p-4 text-center">
-              <FaBirthdayCake className="text-3xl text-purple-600 mx-auto mb-2" />
+              <FaBirthdayCake className="text-3xl text-primary-600 mx-auto mb-2" />
               <div className="text-2xl font-bold text-gray-900">{dietPlan.age} yrs</div>
               <div className="text-sm text-gray-600">Age</div>
             </Card>
@@ -120,8 +120,8 @@ const DietPlanView = () => {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Your Key Metrics</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="flex items-start space-x-4">
-                <div className="p-3 bg-red-100 rounded-lg">
-                  <FaFire className="text-2xl text-red-600" />
+                <div className="p-3 bg-primary-100 rounded-lg">
+                  <FaFire className="text-2xl text-primary-600" />
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">Daily Calories</div>
@@ -130,9 +130,9 @@ const DietPlanView = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="p-3 bg-blue-100 rounded-lg">
-                  <FaWeight className="text-2xl text-blue-600" />
+                <div className="flex items-start space-x-4">
+                <div className="p-3 bg-primary-100 rounded-lg">
+                  <FaWeight className="text-2xl text-primary-600" />
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">BMI</div>
@@ -145,9 +145,9 @@ const DietPlanView = () => {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="p-3 bg-orange-100 rounded-lg">
-                  <FaFire className="text-2xl text-orange-600" />
+                <div className="flex items-start space-x-4">
+                <div className="p-3 bg-primary-100 rounded-lg">
+                  <FaFire className="text-2xl text-primary-600" />
                 </div>
                 <div>
                   <div className="text-sm text-gray-600">BMR</div>
@@ -164,19 +164,19 @@ const DietPlanView = () => {
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Daily Macronutrients</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <FaDrumstickBite className="text-4xl text-red-500 mx-auto mb-2" />
+                  <FaDrumstickBite className="text-4xl text-primary-500 mx-auto mb-2" />
                   <div className="text-3xl font-bold text-gray-900">{dietPlan.nutritionBreakdown.protein}g</div>
                   <div className="text-sm text-gray-600">Protein</div>
                 </div>
 
                 <div className="text-center">
-                  <FaBreadSlice className="text-4xl text-yellow-500 mx-auto mb-2" />
+                  <FaBreadSlice className="text-4xl text-primary-400 mx-auto mb-2" />
                   <div className="text-3xl font-bold text-gray-900">{dietPlan.nutritionBreakdown.carbs}g</div>
                   <div className="text-sm text-gray-600">Carbs</div>
                 </div>
 
                 <div className="text-center">
-                  <FaCheese className="text-4xl text-orange-500 mx-auto mb-2" />
+                  <FaCheese className="text-4xl text-primary-500 mx-auto mb-2" />
                   <div className="text-3xl font-bold text-gray-900">{dietPlan.nutritionBreakdown.fats}g</div>
                   <div className="text-sm text-gray-600">Fats</div>
                 </div>

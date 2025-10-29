@@ -312,7 +312,7 @@ const DietPlannerForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-primary-50 to-orange-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-primary-50 to-primary-50">
       <UserHeader />
 
       <div className="flex-1 py-12">

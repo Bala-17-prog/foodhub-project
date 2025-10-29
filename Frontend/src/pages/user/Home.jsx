@@ -40,28 +40,28 @@ const Home = () => {
       <UserHeader />
       
       {/* Hero Section - Swiggy/Zomato Style */}
-      <div className="relative bg-gradient-to-br from-orange-50 via-white to-red-50 overflow-hidden">
+  <div className="relative bg-gradient-to-br from-primary-50 via-white to-primary-100 overflow-hidden">
         {/* Decorative Background */}
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-orange-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-          <div className="absolute top-40 right-10 w-72 h-72 bg-red-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-          <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
+          <div className="absolute top-40 right-10 w-72 h-72 bg-primary-500 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+          <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-primary-300 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-100 to-red-100 rounded-full">
-                <FaFire className="text-orange-600" />
-                <span className="text-orange-700 font-semibold text-sm">Order Now & Get 50% OFF on First Order</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-primary-100 to-primary-200 rounded-full">
+                <FaFire className="text-primary-600" />
+                <span className="text-primary-700 font-semibold text-sm">Order Now & Get 50% OFF on First Order</span>
               </div>
 
               {/* Main Heading */}
               <div>
                 <h1 className="text-5xl md:text-7xl font-extrabold text-gray-900 leading-tight mb-4">
                   Your Favorite
-                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-red-600 to-pink-600">
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary-600 via-primary-500 to-primary-400">
                     Food Delivered
                   </span>
                   <span className="block">In Minutes</span>
@@ -74,7 +74,7 @@ const Home = () => {
 
               {/* Enhanced Search Bar */}
               <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-red-400 rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-primary-400 to-primary-500 rounded-3xl blur-lg opacity-20 group-hover:opacity-30 transition duration-300"></div>
                 <div className="relative bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
                   <div className="flex items-center">
                     <FaSearch className="absolute left-6 text-gray-400 text-xl" />
@@ -85,7 +85,7 @@ const Home = () => {
                       onChange={(e) => setSearchQuery(e.target.value)}
                       className="w-full pl-16 pr-6 py-6 text-gray-900 text-lg focus:outline-none"
                     />
-                    <button className="absolute right-2 px-6 py-3 bg-gradient-to-r from-orange-600 to-red-600 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:scale-105 transition">
+                    <button className="absolute right-2 px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-2xl font-semibold hover:shadow-lg transform hover:scale-105 transition">
                       Search
                     </button>
                   </div>
@@ -104,7 +104,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-14 h-14 bg-gradient-to-br from-orange-400 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center shadow-lg">
                     <FaUtensils className="text-white text-2xl" />
                   </div>
                   <div>
@@ -113,7 +113,7 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-14 h-14 bg-gradient-to-br from-red-400 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl flex items-center justify-center shadow-lg">
                     <FaHeart className="text-white text-2xl" />
                   </div>
                   <div>
@@ -135,7 +135,7 @@ const Home = () => {
                 {/* Floating Discount Card */}
                 <div className="absolute -bottom-8 -left-8 bg-white rounded-3xl shadow-2xl p-6 animate-float">
                   <div className="flex items-center gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary-400 to-primary-600 rounded-2xl flex items-center justify-center">
                       <FaPercent className="text-white text-3xl" />
                     </div>
                     <div>
@@ -147,7 +147,7 @@ const Home = () => {
                 {/* Floating Rating Card */}
                 <div className="absolute -top-8 -right-8 bg-white rounded-3xl shadow-2xl p-6 animate-float animation-delay-2000">
                   <div className="flex items-center gap-3">
-                    <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-2xl flex items-center justify-center">
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary-200 to-primary-400 rounded-2xl flex items-center justify-center">
                       <FaStar className="text-white text-2xl" />
                     </div>
                     <div>

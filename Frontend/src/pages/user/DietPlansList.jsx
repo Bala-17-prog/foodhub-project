@@ -105,7 +105,7 @@ const DietPlansList = () => {
               {dietPlans.map((plan) => (
                 <Card key={plan._id} className="overflow-hidden hover:shadow-lg transition">
                   {/* Header */}
-                  <div className="bg-gradient-to-r from-primary-500 to-orange-500 p-4 text-white">
+                  <div className="bg-gradient-to-r from-primary-500 to-primary-700 p-4 text-white">
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center">
                         <FaBullseye className="mr-2" />
@@ -136,13 +136,13 @@ const DietPlansList = () => {
                     {/* Stats Grid */}
                     <div className="grid grid-cols-2 gap-4 mb-4">
                       <div className="text-center p-3 bg-gray-50 rounded-lg">
-                        <FaWeight className="text-blue-600 text-xl mx-auto mb-1" />
+                          <FaWeight className="text-primary-600 text-xl mx-auto mb-1" />
                         <div className="text-lg font-bold text-gray-900">{plan.weight} kg</div>
                         <div className="text-xs text-gray-600">Weight</div>
                       </div>
 
                       <div className="text-center p-3 bg-gray-50 rounded-lg">
-                        <FaFire className="text-orange-600 text-xl mx-auto mb-1" />
+                        <FaFire className="text-primary-600 text-xl mx-auto mb-1" />
                         <div className="text-lg font-bold text-gray-900">{plan.dailyCalories}</div>
                         <div className="text-xs text-gray-600">Daily Calories</div>
                       </div>
